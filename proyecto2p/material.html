@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Material</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="src/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+</head>
+<body>
+    <header>
+        <div id="cabeza">
+            <a href="home.html" style="text-decoration: none; color: white;">
+                <h1>GENERAL INSTALADORA</h1>
+            </a>
+            <a href="home.html">
+                <img id="gisaiso" src="src/gisaisotipo.png" alt="Isotipo de Gisa">
+            </a>
+        </div>       
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="inventario.html">Inventario</a></li>
+                    <li><a href="proveedor.html">Proveedor</a></li>
+                    <li><a href="empleado.html">Empleado</a></li>
+                    <li><a href="material.html" class="lugarActual">Solicitud de material</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="contenedor">
+            <div class="opciones">
+                <div class="opcion seleccionada">Prestamo</div>
+            </div>
+            <div class="tabla-contenedor">
+                <div>
+                    <div style="border-radius: 0.5rem; background-color: #2E6193; padding: 0.5rem; width: 17rem;">
+                        <label for="numero" class="form-label text-white" style="margin-bottom: 0.5rem; white-space: nowrap; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Material</label>
+                    </div>
+                </div>
+                <div class="tabla-contenedor">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>Nombre</th>
+                                <th>Cantidad</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Prit</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Cinta</td>
+                                <td>1</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br>
+                    <br>
+                </div>
+                <div class="mb-3">
+                    <div style="border-radius: 0.5rem; background-color: black; padding: 0.5rem; width: 26rem;">
+                        <label class="form-label text-white" style="margin-bottom: 0.5rem; white-space: nowrap; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">A que empleado va dirigido</label>
+                    </div>
+                </div>
+
+                <div style="display: flex;">
+                    <div style="border-radius: 0.5rem; background-color: #2E6193; padding: 0.5rem; width: 12.5rem;">
+                        <label for="material" class="form-label text-white" style="margin-bottom: 0.5rem; white-space: nowrap; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Empleado:</label>
+                    </div>
+                    <input type="text" id="material" name="material" class="form-control" style="margin-top: 0.5rem; margin-left: 1rem;">
+                </div>
+                <div style="display: flex; justify-content: flex-end;">
+                    <button type="submit" class="imprimir-btn" style="padding: 0.5rem 0.5rem;font-size: 0.875rem;">Realizar préstamo</button>
+                </div>                
+            </div>
+        </div>
+    </main>    
+    <footer>
+        <p>Usuario: Robert Lewandowski</p>
+        <p>&copy;</p>
+    </footer>
+</body>
+</html>

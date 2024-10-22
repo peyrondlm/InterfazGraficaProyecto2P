@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proveedor</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="src/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+</head>
+<body>
+    <header>
+        <div id="cabeza">
+            <a href="home.html" style="text-decoration: none; color: white;">
+                <h1>GENERAL INSTALADORA</h1>
+            </a>
+            <a href="home.html">
+                <img id="gisaiso" src="src/gisaisotipo.png" alt="Isotipo de Gisa">
+            </a>
+        </div>       
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="inventario.html">Inventario</a></li>
+                    <li><a href="proveedor.html" class="lugarActual">Proveedor</a></li>
+                    <li><a href="empleado.html">Empleado</a></li>
+                    <li><a href="material.html">Solicitud de material</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="contenedor">
+            <div class="opciones">
+                <div class="opcion seleccionada" onclick="window.location.href='proveedor.html'">Catálogo de proveedores</div>
+                <div class="opcion" onclick="window.location.href='proveedorPrecio.html'">Precio material</div>
+                <div class="opcion" onclick="window.location.href='proveedorReporte.html'">Reportes</div>
+            </div>
+            <div class="tabla-contenedor">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>Nombre</th>
+                            <th>Dirección</th>
+                            <th>Teléfono</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Telas de verdad</td>
+                            <td>Republica 241, Col Santiago</td>
+                            <td>477 713 1097</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Papeleria del Coecillo</td>
+                            <td>San Juan 105, El Coecillo, 372</td>
+                            <td>477 716 6213</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Papeleria del solisillo</td>
+                            <td>San solis 501, El solisillo, 15</td>
+                            <td>477 284 8932</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>solis de verdad</td>
+                            <td>solis 105, Elsol, 372</td>
+                            <td>477 284 8932</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>    
+    <footer>
+        <p>Usuario: Robert Lewandowski</p>
+        <p>&copy;</p>
+    </footer>
+</body>
+</html>

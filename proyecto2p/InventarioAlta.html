@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="src/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+</head>
+<body>
+    <header>
+        <div id="cabeza">
+            <a href="home.html" style="text-decoration: none; color: white;">
+                <h1>GENERAL INSTALADORA</h1>
+            </a>
+            <a href="home.html">
+                <img id="gisaiso" src="src/gisaisotipo.png" alt="Isotipo de Gisa">
+            </a>
+        </div>       
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="inventario.html" class="lugarActual">Inventario</a></li>
+                    <li><a href="proveedor.html">Proveedor</a></li>
+                    <li><a href="empleado.html">Empleado</a></li>
+                    <li><a href="material.html">Solicitud de material</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="contenedor">
+            <div class="opciones">
+                <div class="opcion" onclick="window.location.href='inventario.html'">Materiales</div>
+                <div class="opcion seleccionada" onclick="window.location.href='inventarioAlta.html'">Dar de alta</div>
+            </div>
+            <div class="formulario">
+                <form class="overflow-auto" style="padding: 0.5rem; flex: 1; width:40rem">
+                    <div class="mb-3">
+                        <div style="border-radius: 0.5rem; background-color: #2E6193; padding: 0.5rem; width: 12.5rem;">
+                            <label for="numero" class="form-label text-white" style="margin-bottom: 0.5rem; white-space: nowrap; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">No:</label>
+                        </div>
+                        <input type="number" id="numero" name="numero" class="form-control" style="margin-top: 0.5rem; margin-left: 1rem;">
+                    </div>
+        
+                    <div class="mb-3">
+                        <div style="border-radius: 0.5rem; background-color: #2E6193; padding: 0.5rem; width: 12.5rem;">
+                            <label for="material" class="form-label text-white" style="margin-bottom: 0.5rem; white-space: nowrap; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Material (Nombre):</label>
+                        </div>
+                        <input type="text" id="material" name="material" class="form-control" style="margin-top: 0.5rem; margin-left: 1rem;">
+                    </div>
+        
+                    <div class="mb-3">
+                        <div style="border-radius: 0.5rem; background-color: #2E6193; padding: 0.5rem; width: 12.5rem;">
+                            <label for="unidad" class="form-label text-white" style="margin-bottom: 0.5rem; white-space: nowrap; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Unidad de medida:</label>
+                        </div>
+                        <input type="text" id="unidad" name="unidad" class="form-control" style="margin-top: 0.5rem; margin-left: 1rem;">
+                    </div>
+        
+                    <div class="mb-3">
+                        <div style="border-radius: 0.5rem; background-color: #2E6193; padding: 0.5rem; width: 12.5rem;">
+                            <label for="ubicacion" class="form-label text-white" style="margin-bottom: 0.5rem; white-space: nowrap; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Ubicación:</label>
+                        </div>
+                        <input type="text" id="ubicacion" name="ubicacion" class="form-control" style="margin-top: 0.5rem; margin-left: 1rem;">
+                    </div>
+        
+                    <div class="mb-3">
+                        <div style="border-radius: 0.5rem; background-color: #2E6193; padding: 0.5rem; width: 12.5rem;">
+                            <label for="stock" class="form-label text-white" style="margin-bottom: 0.5rem; white-space: nowrap; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Stock inicial:</label>
+                        </div>
+                        <input type="number" id="stock" name="stock" class="form-control" style="margin-top: 0.5rem; margin-left: 1rem;">
+                    </div>
+                    <div style="display: flex; justify-content: flex-end;">
+                        <button class="btn" style="background-color: #0b3054; color: white; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Guardar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>    
+    <footer>
+        <p>Usuario: Robert Lewandowski</p>
+        <p>&copy;</p>
+    </footer>
+</body>
+</html>

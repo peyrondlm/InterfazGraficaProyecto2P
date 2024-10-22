@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empleado</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="src/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+</head>
+<body>
+    <header>
+        <div id="cabeza">
+            <a href="home.html" style="text-decoration: none; color: white;">
+                <h1>GENERAL INSTALADORA</h1>
+            </a>
+            <a href="home.html">
+                <img id="gisaiso" src="src/gisaisotipo.png" alt="Isotipo de Gisa">
+            </a>
+        </div>
+        <div>
+            <nav>
+                <ul>
+                    <li><a href="inventario.html">Inventario</a></li>
+                    <li><a href="proveedor.html">Proveedor</a></li>
+                    <li><a href="empleado.html" class="lugarActual">Empleado</a></li>
+                    <li><a href="material.html">Solicitud de material</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+    <div class="contenedor">
+        <div class="opciones">
+            <div class="opcion" onclick="window.location.href='empleado.html'">Dar de alta</div>
+            <div class="opcion" onclick="window.location.href='empleadoBaja.html'">Dar de baja</div>
+            <div class="opcion seleccionada" onclick="window.location.href='empleadoModificar.html'">Modificar</div>
+        </div>
+        <div class="formulario">
+            <form class="overflow-auto" style="max-height: 20rem; padding: 0.5rem; flex: 1; width:40rem">
+                <div class="mb-3">
+                    <div style="border-radius: 0.5rem; background-color: #2E6193; padding: 0.5rem; width: 12.5rem;">
+                        <label for="idEmpleado" class="form-label text-white" style="margin-bottom: 0.5rem; white-space: nowrap; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Id Empleado:</label>
+                    </div>
+                    <input type="number" placeholder="(opcional)" id="idEmpleado" name="idEmpleado" class="form-control" style="margin-top: 0.5rem; margin-left: 1rem;">
+                </div>
+
+                <div class="mb-3">
+                    <div style="border-radius: 0.5rem; background-color: #2E6193; padding: 0.5rem; width: 12.5rem;">
+                        <label for="nombre" class="form-label text-white" style="margin-bottom: 0.5rem; white-space: nowrap; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Nombre:</label>
+                    </div>
+                    <input type="text" id="nombre" name="nombre" class="form-control" style="margin-top: 0.5rem; margin-left: 1rem;">
+                </div>
+
+                <div class="mb-3">
+                    <div style="border-radius: 0.5rem; background-color: #2E6193; padding: 0.5rem; width: 12.5rem;">
+                        <label for="apellidos" class="form-label text-white" style="margin-bottom: 0.5rem; white-space: nowrap; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Apellidos:</label>
+                    </div>
+                    <input type="text" id="apellidos" name="apellidos" class="form-control" style="margin-top: 0.5rem; margin-left: 1rem;">
+                </div>
+
+                <br>
+
+                <div class="mb-3">
+                    <div style="border-radius: 0.5rem; background-color: black; padding: 0.5rem; width: 40rem;">
+                        <label class="form-label text-white" style="margin-bottom: 0.5rem; white-space: nowrap; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Nuevos datos:</label>
+                    </div>
+                </div>
+                
+                <div class="mb-3">
+                    <div style="border-radius: 0.5rem; background-color: #2E6193; padding: 0.5rem; width: 12.5rem;">
+                        <label for="nombre" class="form-label text-white" style="margin-bottom: 0.5rem; white-space: nowrap; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Nombre:</label>
+                    </div>
+                    <input type="text" id="nombre" name="nombre" class="form-control" style="margin-top: 0.5rem; margin-left: 1rem;">
+                </div>
+
+                <div class="mb-3">
+                    <div style="border-radius: 0.5rem; background-color: #2E6193; padding: 0.5rem; width: 12.5rem;">
+                        <label for="apellidos" class="form-label text-white" style="margin-bottom: 0.5rem; white-space: nowrap; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Apellidos:</label>
+                    </div>
+                    <input type="text" id="apellidos" name="apellidos" class="form-control" style="margin-top: 0.5rem; margin-left: 1rem;">
+                </div>
+
+                <div class="mb-3">
+                    <div style="border-radius: 0.5rem; background-color: #2E6193; padding: 0.5rem; width: 12.5rem;">
+                        <label for="area" class="form-label text-white" style="margin-bottom: 0.5rem; white-space: nowrap; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Área:</label>
+                    </div>
+                    <input type="text" id="area" name="area" class="form-control" style="margin-top: 0.5rem; margin-left: 1rem;">
+                </div>
+
+                <div class="mb-3">
+                    <div style="border-radius: 0.5rem; background-color: #2E6193; padding: 0.5rem; width: 12.5rem;">
+                        <label for="ocupacion" class="form-label text-white" style="margin-bottom: 0.5rem; white-space: nowrap; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Ocupación:</label>
+                    </div>
+                    <input type="text" id="ocupacion" name="ocupacion" class="form-control" style="margin-top: 0.5rem; margin-left: 1rem;">
+                </div>
+
+                <div class="mb-3">
+                    <div style="border-radius: 0.5rem; background-color: #2E6193; padding: 0.5rem; width: 12.5rem;">
+                        <label for="telefono" class="form-label text-white" style="margin-bottom: 0.5rem; white-space: nowrap; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Teléfono:</label>
+                    </div>
+                    <input type="number" id="telefono" name="telefono" class="form-control" style="margin-top: 0.5rem; margin-left: 1rem;">
+                </div>
+
+                <div style="display: flex; justify-content: flex-end;">
+                    <button class="btn" style="background-color: #0b3054; color: white; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Modificar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    </main>
+    <footer>
+        <p>Usuario: Robert Lewandowski</p>
+        <p>&copy;</p>
+    </footer>
+</body>
+</html>
